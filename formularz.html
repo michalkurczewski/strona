@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <link rel = "stylesheet" href = "style.css">
     <meta charset="UTF-8">
     <title>Formularz danych</title>
 </head>
 <body>
+<h1> Formularz </h1>
+<div class = "container">
 <form>
 <label for="imie">Imię:</label><br>
 <input type = "text" id ="imie" name = "imie" placeholder="Podaj swoje imię"><br><br>
@@ -20,8 +23,7 @@
 <input type = "date" id ="data" name = "data" placeholder="Podaj date urodzenia"><br><br>
 <label for="telefon">Telefon:</label><br>
 <input type = "tel" id ="telefon" name = "telefon" placeholder="Podaj nr telefonu"><br><br>
-<label for="Województwo"Województwo:</label><br>
-<input type = "text" id ="nazwisko" name = "nazwisko" placeholder="Podaj swoje nazwisko"><br><br>
+<label for="wojewodztwo">Województwo:</label><br>
 <select id="wojewodztwo" name="wojewodztwo">
 <option value="">Wybierz województwo</option>
 <option value="dolnoslaskie">Dolnośląskie</option>
@@ -50,4 +52,5 @@
 <input type = "submit" value = "Wyślij">
 <input type = "reset" value = "Zresetuj">
 </form>
+</div>
 </body>

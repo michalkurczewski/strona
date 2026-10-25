@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+
+
+    <section class="sekcja-formularza">
+        <div class="form-container">
+            <h1>Formularz</h1>
+            <form action="#">
+                <div class="input-group">
+                    <label for="imie">Imię:</label>
+                    <input type="text" id="imie" placeholder="Podaj swoje imię">
+                </div>
+                <div class="input-group">
+                    <label for="nazwisko">Nazwisko:</label>
+                    <input type="text" id="nazwisko" placeholder="Podaj swoje nazwisko">
+                </div>
+                <div class="input-group">
+                    <label for="ulica">Ulica:</label>
+                    <input type="text" id="ulica" placeholder="Podaj ulicę na której mieszkasz">
+                </div>
+                <div class="input-group">
+                    <label for="miasto">Miasto:</label>
+                    <input type="text" id="miasto" placeholder="Podaj miasto w którym mieszkasz">
+                </div>
+                <div class="input-group">
+                    <label for="haslo">Hasło:</label>
+                    <input type="password" id="haslo" placeholder="Podaj hasło">
+                </div>
+                <div class="input-group">
+                    <label for="data_urodzenia">Data urodzenia:</label>
+                    <input type="date" id="data_urodzenia">
+                </div>
+                <div class="input-group">
+                    <label for="telefon">Telefon:</label>
+                    <input type="tel" id="telefon" placeholder="Podaj nr telefonu">
+                </div>
+                <div class="input-group">
+                    <label for="wojewodztwo">Województwo:</label>
+                    <select id="wojewodztwo">
+                        <option value="">Wybierz województwo</option>
+                        <option value="dolnoslaskie">Dolnośląskie</option>
+                        <option value="kujawskopomorskie">Kujawsko-pomorskie</option>
+                        <option value="lubelskie">Lubelskie</option>
+                        <option value="lubuskie">Lubuskie</option>
+                        <option value="lodzkie">Łódzkie</option>
+                        <option value="malopolskie">Małopolskie</option>
+                        <option value="mazowieckie">Mazowieckie</option>
+                        <option value="opolskie">Opolskie</option>
+                        <option value="podkarpackie">Podkarpackie</option>
+                        <option value="podlaskie">Podlaskie</option>
+                        <option value="pomorskie">Pomorskie</option>
+                        <option value="slaskie">Śląskie</option>
+                        <option value="swietokrzyskie">Świętokrzyskie</option>
+                        <option value="warminskomazurskie">Warmińsko-mazurskie</option>
+                        <option value="wielkopolskie">Wielkopolskie</option>
+                        <option value="zachodniopomorskie">Zachodniopomorskie</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Podaj email">
+                </div>
+                <div class="input-group">
+                    <label for="uwagi">Uwagi:</label>
+                    <input type="text" id="uwagi" placeholder="Wpisz uwagi">
+                </div>
+                <div class="input-group checkbox-group">
+                    <label for="prawojazdy">Czy posiadasz prawo jazdy?:</label>
+                    <input type="checkbox" id="prawojazdy" name="prawojazdy" value="tak">
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary">Wyślij</button>
+                    <button type="reset" class="btn btn-secondary">Zresetuj</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
