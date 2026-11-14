@@ -10,21 +10,24 @@
 <div class = "container">
 <form>
 <label for="imie">Imię:</label><br>
-<input type = "text" id ="imie" name = "imie" placeholder="Podaj swoje imię"><br><br>
+<input type = "text" id ="imie" name = "imie" placeholder="Podaj swoje imię"
+    required
+    pattern="[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+"
+    title="Imię musi zaczynać się z wielkiej litery i zawierać tylko litery"><br><br>
 <label for="nazwisko">Nazwisko:</label><br>
-<input type = "text" id ="nazwisko" name = "nazwisko" placeholder="Podaj swoje nazwisko"><br><br>
+<input type="text" id="nazwisko" name="nazwisko" placeholder="Podaj swoje nazwisko" minlength="2" maxlength="50" required pattern="[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+(-[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+)?" title="Nazwisko musi zaczynać się z wielkiej litery, zawierać tylko litery. W przypadku nazwisk dwuczłonowych - użyj myślnika, np Kowalska-Nowak"><br><br>
 <label for="ulica">Ulica:</label><br>
-<input type = "text" id ="ulica" name = "ulica" placeholder="Podaj ulice na której mieszkasz"><br><br>
+<input type = "text" id ="ulica" name = "ulica" placeholder="Podaj ulice na której mieszkasz" minlength = "2" maxlength = "30" required pattern = "^([A-ZĄĆĘŁŃÓŚŹŻ]).+" title = "Nazwa ulicy musi zaczynać się od dużej litery"><br><br>
 <label for="miasto">Miasto:</label><br>
-<input type = "text" id ="miasto" name = "miasto" placeholder="Podaj miasto w którym mieszkasz"><br><br>
+<input type = "text" id ="miasto" name = "miasto" placeholder="Podaj miasto w którym mieszkasz" minlength = "2" maxlength = "30" required pattern = "^([A-ZĄĆĘŁŃÓŚŹŻ])[a-zA-ZĄĆĘŁŃÓŚŹŻąćęłńóśźż\s\-]+" title = "Nazwa miasta musi zaczynać się od dużej litery"><br><br>
 <label for="haslo">Hasło:</label><br>
-<input type = "password" id ="haslo" name = "haslo" placeholder="Podaj hasło"><br><br>
+<input type = "password" id ="haslo" name = "haslo" placeholder="Podaj hasło" required><br><br>
 <label for="data">Data urodzenia:</label><br>
-<input type = "date" id ="data" name = "data" placeholder="Podaj date urodzenia"><br><br>
+<input type = "date" id ="data" name = "data" placeholder="Podaj date urodzenia" required><br><br>
 <label for="telefon">Telefon:</label><br>
-<input type = "tel" id ="telefon" name = "telefon" placeholder="Podaj nr telefonu"><br><br>
+<input type = "tel" id ="telefon" name = "telefon" placeholder="Podaj nr telefonu" required pattern = "\+48 [0-9]{9}" title = "Format numeru telefonu: +48, spacja, 9 cyfr, np +48 999999999"><br><br>
 <label for="wojewodztwo">Województwo:</label><br>
-<select id="wojewodztwo" name="wojewodztwo">
+<select id="wojewodztwo" name="wojewodztwo" required>
 <option value="">Wybierz województwo</option>
 <option value="dolnoslaskie">Dolnośląskie</option>
 <option value="kujawsko-pomorskie">Kujawsko-pomorskie</option>
@@ -44,9 +47,9 @@
 <option value="zachodniopomorskie">Zachodniopomorskie</option>
 </select><br><br>
 <label for="Email">Email:</label><br>
-<input type = "email" id ="Email" name = "Email" placeholder="Podaj email"><br><br>
+<input type = "email" id ="Email" name = "Email" placeholder="Podaj email" required title = "Email musi zawierać znak @"><br><br>
 <label for="uwagi">Uwagi:</label><br>
-<input type = "text" id ="uwagi" name = "uwagi" placeholder="Wpisz uwagi"><br><br>
+<textarea id="uwagi" name="uwagi" placeholder = "Wpisz uwagi"></textarea><br><br>
 <label for="prawojazdy">Czy posiadasz prawo jazdy?:</label><br>
 <input type = "checkbox" id ="prawojazdy" name = "prawojazdy" value = "tak"><br><br>
 <input type = "submit" value = "Wyślij">
