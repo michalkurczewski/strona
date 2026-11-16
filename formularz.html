@@ -17,7 +17,7 @@
 <label for="nazwisko">Nazwisko:</label><br>
 <input type="text" id="nazwisko" name="nazwisko" placeholder="Podaj swoje nazwisko" minlength="2" maxlength="50" required pattern="[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+(-[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+)?" title="Nazwisko musi zaczynać się z wielkiej litery, zawierać tylko litery. W przypadku nazwisk dwuczłonowych - użyj myślnika, np Kowalska-Nowak"><br><br>
 <label for="ulica">Ulica:</label><br>
-<input type = "text" id ="ulica" name = "ulica" placeholder="Podaj ulice na której mieszkasz" minlength = "2" maxlength = "30" required pattern = "^([A-ZĄĆĘŁŃÓŚŹŻ]).+" title = "Nazwa ulicy musi zaczynać się od dużej litery"><br><br>
+<input type="text" id="ulica" name="ulica" placeholder="Podaj ulicę, na której mieszkasz" minlength="2" maxlength="50" required pattern="[A-ZĄĆĘŁŃÓŚŹŻ0-9][a-zA-ZĄĆĘŁŃÓŚŹŻąćęłńóśźż0-9\s\.\-\/]+" title="Nazwa ulicy musi zaczynać się od wielkiej litery lub cyfry"><br><br>
 <label for="miasto">Miasto:</label><br>
 <input type = "text" id ="miasto" name = "miasto" placeholder="Podaj miasto w którym mieszkasz" minlength = "2" maxlength = "30" required pattern = "^([A-ZĄĆĘŁŃÓŚŹŻ])[a-zA-ZĄĆĘŁŃÓŚŹŻąćęłńóśźż\s\-]+" title = "Nazwa miasta musi zaczynać się od dużej litery"><br><br>
 <label for="haslo">Hasło:</label><br>
@@ -25,7 +25,7 @@
 <label for="data">Data urodzenia:</label><br>
 <input type = "date" id ="data" name = "data" placeholder="Podaj date urodzenia" required title = "To pole jest obowiązkowe. Podaj date urodzenia"><br><br>
 <label for="telefon">Telefon:</label><br>
-<input type = "tel" id ="telefon" name = "telefon" placeholder="Podaj nr telefonu" required pattern = "\+48 [0-9]{9}" title = "Format numeru telefonu: +48, spacja, 9 cyfr, np +48 999999999"><br><br>
+<input type="tel" id="telefon" name="telefon" placeholder="Podaj nr telefonu z kierunkowym" required pattern="\+[0-9]{1,3}[\s\-]?([0-9][\s\-]?){7,11}" title="Podaj numer z kierunkowym, np. +48 123 456 789"><br><br>
 <label for="wojewodztwo">Województwo:</label><br>
 <select id="wojewodztwo" name="wojewodztwo" required>
 <option value="">Wybierz województwo</option>
