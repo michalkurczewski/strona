@@ -21,7 +21,7 @@
 <label for="miasto">Miasto:</label><br>
 <input type = "text" id ="miasto" name = "miasto" placeholder="Podaj miasto w którym mieszkasz" minlength = "2" maxlength = "30" required pattern = "^([A-ZĄĆĘŁŃÓŚŹŻ])[a-zA-ZĄĆĘŁŃÓŚŹŻąćęłńóśźż\s\-]+" title = "Nazwa miasta musi zaczynać się od dużej litery"><br><br>
 <label for="haslo">Hasło:</label><br>
-<input type = "password" id ="haslo" name = "haslo" placeholder="Podaj hasło" required><br><br>
+<input type = "password" id ="haslo" name = "haslo" placeholder="Podaj hasło" required pattern = ".{8.} title="Haslo musi miec conajmniej 8 znaków"><br><br>
 <label for="data">Data urodzenia:</label><br>
 <input type = "date" id ="data" name = "data" placeholder="Podaj date urodzenia" required title = "To pole jest obowiązkowe. Podaj date urodzenia"><br><br>
 <label for="telefon">Telefon:</label><br>
